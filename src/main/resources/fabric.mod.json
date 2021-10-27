@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "rising_uppercut",
+  "version": "${version}",
+
+  "name": "Rising Uppercut",
+  "description": "Only through conflict do we evolve.",
+  "authors": [
+    "MarbleGateKeeper"
+  ],
+  "contact": {
+    "homepage": "https://marblegate.love/",
+    "issues": "https://github.com/MarbleGateKeeper/RisingUppercut-Fabric/issues",
+    "sources": "https://github.com/MarbleGateKeeper/RisingUppercut-Fabric"
+  },
+
+  "license": "BSD 3-Clause License",
+  "icon": "assets/rising_uppercut/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "love.marblegate.risinguppercut.RisingUppercut"
+    ],
+    "modmenu": [
+      "love.marblegate.risinguppercut.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "rising_uppercut.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16",
+    "cloth-config2": ">=5.0.0"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
