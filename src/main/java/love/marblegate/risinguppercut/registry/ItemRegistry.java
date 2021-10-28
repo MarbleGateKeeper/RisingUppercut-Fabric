@@ -15,7 +15,7 @@ public class ItemRegistry {
     public static final Item GAUNTLET_COORDINATE_DRIVE = new Item(new FabricItemSettings().group(ModGroup.GENERAL).maxCount(1));
     public static final Item GAUNTLET_COOLER = new Item(new FabricItemSettings().group(ModGroup.GENERAL).maxCount(1));
 
-    public static void handle(){
+    public static void ini(){
         register(GAUNTLET,"gauntlet");
         register(GAUNTLET_SURFACE,"gauntlet_surface");
         register(GAUNTLET_KINETIC_CORE,"gauntlet_kinetic_core");

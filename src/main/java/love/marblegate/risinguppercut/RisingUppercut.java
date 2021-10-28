@@ -1,7 +1,9 @@
 package love.marblegate.risinguppercut;
 
 import love.marblegate.risinguppercut.config.Configuration;
+import love.marblegate.risinguppercut.registry.EnchantmentRegistry;
 import love.marblegate.risinguppercut.registry.ItemRegistry;
+import love.marblegate.risinguppercut.registry.StatusEffectRegistry;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
@@ -21,6 +23,8 @@ public class RisingUppercut implements ModInitializer {
 		AutoConfig.register(Configuration.class, JanksonConfigSerializer::new);
 		CONFIG = AutoConfig.getConfigHolder(Configuration.class).getConfig();
 
-		ItemRegistry.handle();
+		ItemRegistry.ini();
+		EnchantmentRegistry.ini();
+		StatusEffectRegistry.ini();
 	}
 }

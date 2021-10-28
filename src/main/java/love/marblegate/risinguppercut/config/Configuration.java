@@ -20,7 +20,7 @@ public class Configuration implements ConfigData {
     @ConfigEntry.Gui.TransitiveObject
     public SafeLandingConfig safeLandingConfig = new SafeLandingConfig();
 
-    static class RisingUppercutConfig{
+    public static class RisingUppercutConfig{
         public double damage = 8;
         public int cooldown = 60;
         public int uprisingTime = 8;
@@ -28,7 +28,7 @@ public class Configuration implements ConfigData {
         public double risingSpeedIndex = 0.1;
     }
 
-    static class RocketPunchConfig{
+    public static class RocketPunchConfig{
         public double damage = 0.5;
         public int cooldown = 120;
         public int maxChargeTime = 20;
@@ -36,7 +36,7 @@ public class Configuration implements ConfigData {
         public double knockbackSpeedIndex =2;
     }
 
-    static class SafeLandingConfig{
+    public static class SafeLandingConfig{
         public boolean doNotRequireEnchantment = false;
         public boolean disposableEffect = false;
         public int defaultDuration = 100;

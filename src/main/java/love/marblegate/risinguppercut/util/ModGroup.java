@@ -10,5 +10,6 @@ import net.minecraft.util.Identifier;
 public class ModGroup {
     public static ItemGroup GENERAL = FabricItemGroupBuilder.build(
             new Identifier(RisingUppercut.MODID, "all"),
-            () -> new ItemStack(ItemRegistry.GAUNTLET.asItem()));
+            () -> new ItemStack(ItemRegistry.GAUNTLET.asItem())).setEnchantments(ModEnchantmentTarget.GAUNTLET);
+
 }
