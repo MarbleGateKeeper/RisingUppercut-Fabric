@@ -5,6 +5,15 @@ import net.fabricmc.fabric.api.event.EventFactory;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.ActionResult;
 
+/**
+ * Callback for LivingEntity fall and is about to take damage.
+ *
+ * <p>Upon return:
+ * <ul><li>SUCCESS cancels further processing and force this fall to happen.
+ * <li>PASS falls back to further processing.
+ * <li>FAIL cancels further processing and cancel this fall.</ul>
+ *
+ */
 public interface LivingEntityHandleFallCallback {
 
     Event<LivingEntityHandleFallCallback> EVENT = EventFactory.createArrayBacked(LivingEntityHandleFallCallback.class,
