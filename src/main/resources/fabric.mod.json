@@ -9,9 +9,10 @@
     "MarbleGateKeeper"
   ],
   "contact": {
-    "homepage": "https://marblegate.love/",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/rising-uppercut-fabric",
     "issues": "https://github.com/MarbleGateKeeper/RisingUppercut-Fabric/issues",
-    "sources": "https://github.com/MarbleGateKeeper/RisingUppercut-Fabric"
+    "sources": "https://github.com/MarbleGateKeeper/RisingUppercut-Fabric",
+    "author": "https://marblegate.love/"
   },
 
   "license": "BSD 3-Clause License",
@@ -21,6 +22,9 @@
   "entrypoints": {
     "main": [
       "love.marblegate.risinguppercut.RisingUppercut"
+    ],
+    "client": [
+      "love.marblegate.risinguppercut.ClientSetup"
     ],
     "modmenu": [
       "love.marblegate.risinguppercut.config.ModMenuIntegration"

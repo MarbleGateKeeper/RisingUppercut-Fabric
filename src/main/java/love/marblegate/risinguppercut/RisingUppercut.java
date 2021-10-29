@@ -3,6 +3,7 @@ package love.marblegate.risinguppercut;
 import love.marblegate.risinguppercut.config.Configuration;
 import love.marblegate.risinguppercut.event.Event;
 import love.marblegate.risinguppercut.registry.EnchantmentRegistry;
+import love.marblegate.risinguppercut.registry.EntityRegistry;
 import love.marblegate.risinguppercut.registry.ItemRegistry;
 import love.marblegate.risinguppercut.registry.StatusEffectRegistry;
 import me.shedaniel.autoconfig.AutoConfig;
@@ -27,6 +28,7 @@ public class RisingUppercut implements ModInitializer {
 		ItemRegistry.ini();
 		EnchantmentRegistry.ini();
 		StatusEffectRegistry.ini();
+		EntityRegistry.ini();
 
 		Event.ini();
 	}

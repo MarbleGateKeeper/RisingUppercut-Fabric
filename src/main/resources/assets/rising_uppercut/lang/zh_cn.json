@@ -20,5 +20,23 @@
   "death.attack.rising_uppercut.rising_uppercut": "%2$s 一个上勾拳将 %1$s 送上了天。",
   "death.attack.rising_uppercut.rocket_punch": "%2$s 一拳将 %1$s 轰飞了。",
   "death.attack.rising_uppercut.rocket_punch_on_wal": "%2$s 一拳将 %1$s 轰进了墙里。",
-  "itemGroup.rising_uppercut.all": "上勾拳！"
+  "itemGroup.rising_uppercut.all": "上勾拳！",
+
+  "text.autoconfig.rising_uppercut.title": "上勾拳！模组设置",
+  "text.autoconfig.rising_uppercut.category.rising_uppercut": "上勾拳设置",
+  "text.autoconfig.rising_uppercut.category.rocket_punch": "火箭重拳设置",
+  "text.autoconfig.rising_uppercut.category.safe_landing": "安全降落效果",
+  "text.autoconfig.rising_uppercut.option.risingUppercutConfig.damage": "伤害",
+  "text.autoconfig.rising_uppercut.option.risingUppercutConfig.cooldown": "冷却时间 (tick)",
+  "text.autoconfig.rising_uppercut.option.risingUppercutConfig.uprisingTime": "上升时间 (tick)",
+  "text.autoconfig.rising_uppercut.option.risingUppercutConfig.floatingTime": "浮空时间 (tick)",
+  "text.autoconfig.rising_uppercut.option.risingUppercutConfig.risingSpeedIndex":"上升速度系数",
+  "text.autoconfig.rising_uppercut.option.rocketPunchConfig.damage": "伤害 (每单位时间蓄力)",
+  "text.autoconfig.rising_uppercut.option.rocketPunchConfig.cooldown": "冷却时间 (tick)",
+  "text.autoconfig.rising_uppercut.option.rocketPunchConfig.maxChargeTime": "最大有效蓄力时间 (tick)",
+  "text.autoconfig.rising_uppercut.option.rocketPunchConfig.movementSpeedIndex": "移动速度系数",
+  "text.autoconfig.rising_uppercut.option.rocketPunchConfig.knockbackSpeedIndex": "击退效果系数",
+  "text.autoconfig.rising_uppercut.option.safeLandingConfig.doNotRequireEnchantment": "无需轻盈落地魔纹附魔",
+  "text.autoconfig.rising_uppercut.option.safeLandingConfig.disposableEffect": "一次性效果",
+  "text.autoconfig.rising_uppercut.option.safeLandingConfig.defaultDuration": "持续时长"
 }
