@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//TODO God damn it! Enum in J17 is sealed!
 @Mixin(EnchantmentTarget.class)
 public abstract class MixinEnchantmentTarget {
     private MixinEnchantmentTarget(String name, int ordinal) {
@@ -42,7 +43,7 @@ public abstract class MixinEnchantmentTarget {
 
         // This means our code will still work if other mods or Mojang add more variants!
         // Repeat this section if you need more than one entry. Just remember to have unique ordinals!
-        ModEnchantmentTarget.GAUNTLET = (EnchantmentTarget) (Object)new MixinEnchantmentTarget("GAUNTLET", last.ordinal() + 1){
+        ModEnchantmentTarget.GAUNTLET = (EnchantmentTarget) (Object) new MixinEnchantmentTarget("GAUNTLET", last.ordinal() + 1){
             @Override
             public boolean isAcceptableItem(Item item) {
                 return item instanceof Gauntlet;
