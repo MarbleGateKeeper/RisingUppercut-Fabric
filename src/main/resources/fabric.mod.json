@@ -17,7 +17,7 @@
 
   "license": "BSD 3-Clause License",
   "icon": "assets/rising_uppercut/icon.png",
-
+  "accessWidener": "rising_uppercut.accesswidener",
   "environment": "*",
   "entrypoints": {
     "main": [
