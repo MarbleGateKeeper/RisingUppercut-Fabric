@@ -18,6 +18,7 @@ repositories {
 	// for more information about repositories.
 	maven { url "https://maven.shedaniel.me/" }
 	maven { url "https://maven.terraformersmc.com/releases/" }
+	maven { url "https://jitpack.io"}
 }
 
 dependencies {
@@ -29,10 +30,14 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modApi("me.shedaniel.cloth:cloth-config-fabric:6.0.42") {
+	modApi("me.shedaniel.cloth:cloth-config-fabric:6.2.57") {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
-	modImplementation "com.terraformersmc:modmenu:3.0.0"
+	modImplementation "com.terraformersmc:modmenu:3.1.0"
+
+	// fabric-asm / Manningham-Mills
+	modImplementation "com.github.Chocohead:Fabric-ASM:2.3"
+	include "com.github.Chocohead:Fabric-ASM:2.3"
 }
 
 processResources {
@@ -41,6 +46,10 @@ processResources {
 	filesMatching("fabric.mod.json") {
 		expand "version": project.version
 	}
+}
+
+loom {
+	accessWidenerPath = file("src/main/resources/rising_uppercut.accesswidener")
 }
 
 tasks.withType(JavaCompile).configureEach {

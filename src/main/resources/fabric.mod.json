@@ -17,7 +17,7 @@
 
   "license": "BSD 3-Clause License",
   "icon": "assets/rising_uppercut/icon.png",
-
+  "accessWidener": "rising_uppercut.accesswidener",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -28,16 +28,19 @@
     ],
     "modmenu": [
       "love.marblegate.risinguppercut.config.ModMenuIntegration"
+    ],
+    "mm:early_risers": [
+      "love.marblegate.risinguppercut.fabricasm.EarlyRiser"
     ]
   },
   "mixins": [
     "rising_uppercut.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.12.8",
+    "fabricloader": ">=0.13.3",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": "1.18.2",
     "java": ">=17",
-    "cloth-config2": ">=6.0.42"
+    "cloth-config2": ">=6.2.57"
   }
 }
